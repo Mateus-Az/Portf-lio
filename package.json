@@ -17,6 +17,7 @@
     "@angular/platform-browser": "^16.2.0",
     "@angular/platform-browser-dynamic": "^16.2.0",
     "@angular/router": "^16.2.0",
+    "@vercel/analytics": "^1.1.1",
     "angular-waypoints": "^2.0.0",
     "howler": "^2.2.4",
     "rxjs": "~7.8.0",
