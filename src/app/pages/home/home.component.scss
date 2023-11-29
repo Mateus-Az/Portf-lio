@@ -697,6 +697,8 @@
 
                             border: 1px solid rgba(255, 255, 255, 0.10);
 
+                            transition: all .65s ease;
+
                             img {
                                 width: 32px;
                                 height: 32px;
@@ -788,6 +790,8 @@
                                     height: 55px;
                                     max-width: 55px;
                                     max-height: 55px;
+
+                                    transition: all .20s ease;
 
                                     &:hover {
                                         transform: translateY(-3px);
@@ -889,6 +893,8 @@
                             align-items: center;
 
                             border: 1px solid rgba(255, 255, 255, 0.10);
+
+                            transition: all .65s ease;
 
                             img {
                                 width: 32px;
@@ -1127,16 +1133,20 @@
                     }
 
                     @media(max-width:600px) {
-                        .top, .midle, .bottom{
+
+                        .top,
+                        .midle,
+                        .bottom {
                             flex-direction: column;
-                            .num{
+
+                            .num {
                                 height: 100%;
                                 display: flex;
                                 justify-content: flex-start;
                                 font-size: 28px;
                             }
 
-                            .text{
+                            .text {
                                 font-size: 12px;
                                 width: 60%;
                             }
@@ -1180,7 +1190,7 @@
                         margin-left: 10px;
                     }
 
-                    .bottom-2{
+                    .bottom-2 {
                         margin-left: 55px;
                     }
 
@@ -1195,11 +1205,11 @@
                         margin-top: 10px;
                         padding: 25px;
 
-                        h1{
+                        h1 {
                             margin-left: 30px;
                         }
 
-                        .bottom-2{
+                        .bottom-2 {
                             margin-left: 30px;
                         }
                     }
@@ -1209,12 +1219,10 @@
     }
 
     .view-2 {
-        overflow: hidden;
 
-        height: 100vh;
-        background-color: #1C1C1C;
+        height: 160vh;
+        background-color: #0f0f0f;
         box-sizing: border-box;
-
 
         .project-header {
             display: flex;
@@ -1247,6 +1255,21 @@
                 -webkit-text-stroke-color: white;
 
                 transform: translateX(65%);
+            }
+        }
+
+        .list-projects {
+            display: flex;
+            flex-wrap: wrap;
+            width: 70%;
+            height: 80%;
+            margin: auto;
+            justify-content: space-around;
+
+            div{
+                width: 48%;
+                height: 48%;
+                background: #181818;
             }
         }
     }
