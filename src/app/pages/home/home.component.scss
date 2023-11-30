@@ -1266,10 +1266,13 @@
             margin: auto;
             justify-content: space-around;
 
-            div{
+            card-project{
                 width: 48%;
                 height: 48%;
-                background: #181818;
+
+                &:hover{
+                    
+                }
             }
         }
     }
