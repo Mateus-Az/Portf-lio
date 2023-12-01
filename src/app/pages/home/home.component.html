@@ -88,8 +88,8 @@
 
                 <div class="col-2-1">
                     <div class="links">
-                        <a href=""> <img src="/assets/dowload.svg" alt=""></a>
-                        <a href=""> <img src="/assets/wpp.svg" alt=""></a>
+                        <a href="https://docs.google.com/document/d/13CGtWMXSIbDehErTbavf4vXtJ3mBevGA/edit?usp=sharing&ouid=115801112536972825482&rtpof=true&sd=true" target="_blank"> <img src="/assets/dowload.svg" alt=""></a>
+                        <a href="https://wa.me/5551989655009?text=Ol%C3%A1+vi+seu+perfil+no+seu+site%2C+gostaria+de+saber+sobre+%22++++%22." target="_blank"> <img src="/assets/wpp.svg" alt=""></a>
                     </div>
                     <div class="text">
                         <span class="span-1">details about me</span>
@@ -154,10 +154,10 @@
                 </div>
                 <div class="col-2-3">
                     <div class="social">
-                        <a href="">
+                        <a href="https://github.com/Mateus-Az" target="_blank">
                             <img style="height: 50px; width: 50px;" src="/assets/github.svg" alt="">
                         </a>
-                        <a href="">
+                        <a href="https://www.linkedin.com/in/mateoaz/" target="_blank">
                             <img src="/assets/lk.svg" alt="">
                         </a>
                     </div>
@@ -213,10 +213,7 @@
         </div>
 
         <section class="list-projects">
-            <card-project></card-project>
-            <card-project></card-project>
-            <card-project></card-project>
-            <card-project></card-project>
+            <card-project *ngFor="let card of cardsProject" [techTitle]="card.techTitle" [titleProject]="card.titleProject"></card-project>
         </section>
         
     </div>

@@ -106,6 +106,14 @@
 
             img {
                 margin-left: 5px;
+
+                transition: all .40s ease;
+            }
+
+            &:hover {
+                img {
+                    transform: translateX(12px);
+                }
             }
 
         }
@@ -117,7 +125,7 @@
             top: 30%;
 
             display: grid;
-            grid-template-columns: 94px 94px 94px 94px;
+            grid-template-columns: auto auto auto auto;
             gap: 12px;
 
             .item {
@@ -126,6 +134,7 @@
 
                 text-align: center;
 
+                padding: 0px 8px 0px 8px;
 
                 color: #BEBEBE;
                 font-family: Inter;
