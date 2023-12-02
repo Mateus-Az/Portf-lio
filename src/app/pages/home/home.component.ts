@@ -9,6 +9,30 @@ import { Howl } from 'howler';
 export class HomeComponent implements OnInit {
   sound: Howl | undefined;
 
+  cardsProject = [
+    {
+      techTitle: 'Full-Stack',
+      titleProject: 'Missão Andrômeda',
+      listStack: [
+        { stack: 'java' },
+        { stack: 'spring' },
+        { stack: 'angular' },
+        { stack: 'aws' }
+      ]
+    },
+    {
+      techTitle: 'Front-end',
+      titleProject: 'Halloween',
+      listStack: [
+        { stack: 'angular' },
+        { stack: 'typescript' },
+        { stack: 'scss' },
+        { stack: 'html' }
+      ]
+    },
+    { techTitle: 'Back-end', titleProject: 'RailVista' },
+    { techTitle: 'Desktop', titleProject: 'Viação Suli' }
+  ];
 
   constructor() { }
 
