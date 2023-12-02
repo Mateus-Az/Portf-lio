@@ -11,6 +11,9 @@
         height: 100vh;
         overflow: hidden;
 
+        position: sticky;
+        top: 0;
+
 
         navbar {
             display: flex;
@@ -239,6 +242,9 @@
         display: flex;
         justify-content: center;
         align-items: center;
+
+        position: sticky;
+        top: 0;
 
         @media(max-width:600px) {
             height: auto;
@@ -1230,6 +1236,9 @@
         height: 160vh;
         background-color: #0f0f0f;
         box-sizing: border-box;
+
+        position: sticky;
+        top: 0;
 
         .project-header {
             display: flex;

@@ -10,13 +10,29 @@ export class HomeComponent implements OnInit {
   sound: Howl | undefined;
 
   cardsProject = [
-    { techTitle: 'Full-Stack',titleProject:'Missão Andrômeda' },
-    { techTitle: 'Front-end' },
-    // Adicione mais objetos conforme necessário
+    {
+      techTitle: 'Full-Stack',
+      titleProject: 'Missão Andrômeda',
+      listStack: [
+        { stack: 'java' },
+        { stack: 'spring' },
+        { stack: 'angular' },
+        { stack: 'aws' }
+      ]
+    },
+    {
+      techTitle: 'Front-end',
+      titleProject: 'Halloween',
+      listStack: [
+        { stack: 'angular' },
+        { stack: 'typescript' },
+        { stack: 'scss' },
+        { stack: 'html' }
+      ]
+    },
+    { techTitle: 'Back-end', titleProject: 'RailVista' },
+    { techTitle: 'Desktop', titleProject: 'Viação Suli' }
   ];
-  
-techTitle: string|string[]|Set<string>|{ [klass: string]: any; }|null|undefined;
-
 
   constructor() { }
 

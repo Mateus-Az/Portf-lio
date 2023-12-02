@@ -8,4 +8,5 @@ import { Component, Input } from '@angular/core';
 export class CardProjectComponent {
   @Input() techTitle: any;
   @Input() titleProject: any;
+  @Input() listTech: any;
 }

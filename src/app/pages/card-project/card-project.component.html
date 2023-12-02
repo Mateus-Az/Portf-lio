@@ -11,10 +11,7 @@
     <h2>{{titleProject}}</h2>
 
     <div class="tech-used">
-        <div class="item">java</div>
-        <div class="item">spring</div>
-        <div class="item">angular</div>
-        <div class="item">aws</div>
+        <div class="item" *ngFor="let tech of listTech">{{tech.stack}}</div>
     </div>
 
     <a href="">
