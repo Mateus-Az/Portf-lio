@@ -14,6 +14,7 @@
         position: sticky;
         top: 0;
 
+        transition: top 0.5s ease-in-out;
 
         navbar {
             display: flex;
@@ -237,6 +238,8 @@
         height: 100vh;
         background-color: #0f0f0f;
         overflow: hidden;
+
+        transition: top 0.5s ease-in-out;
 
 
         display: flex;
@@ -1239,6 +1242,7 @@
 
         position: sticky;
         top: 0;
+        transition: top 0.5s ease-in-out;
 
         .project-header {
             display: flex;
