@@ -1,18 +1,18 @@
 <div id="dv" (scroll)="onScroll($event)">
     <div class="main">
-        <navbar></navbar>
+        <navbar class="fadeIn"></navbar>
 
         <div class="center">
-            <div class="row1">
+            <div class="row1 slideInRight">
                 <span id="r1">Full</span>
             </div>
-            <div id="div" class="row2">
+            <div id="div" class="row2 slideInLeft">
                 <span id="r2" class="mid">Stack</span>
                 <span class="hello">Hello, I am <strong style="color: #1C1C1C; font-weight: 700;">Mateo
                         Azevedo</strong>, a programmer with a focus on backend development, available for freelance or
                     full-time work.</span>
             </div>
-            <div class="row3">
+            <div class="row3 slideInRight">
                 <img src="/assets/jaan.png" alt="">
                 <span id="r3">Developer</span>
             </div>
@@ -24,7 +24,7 @@
         </div>
     </div>
 
-    <div class="view-1">
+    <div #viewOne class="view-1">
 
         <div class="profile">
             <div class="col-1">
@@ -204,7 +204,7 @@
         </div>
     </div>
 
-    <div class="view-2">
+    <div #viewTwo class="view-2">
         <div class="project-header">
             <span id="view2-r1" class="title"> Featured Projects - Featured Projects - Featured Projects - Featured
                 Projects - Featured Projects - Featured Projects - Featured Projects - Featured Projects - Featured
@@ -213,7 +213,7 @@
         </div>
 
         <section class="list-projects">
-            <card-project *ngFor="let card of cardsProject" [techTitle]="card.techTitle" [titleProject]="card.titleProject" [listTech]="card.listStack" [imagem]="card.imagem"></card-project>
+            <card-project *ngFor="let card of cardsProject" [techTitle]="card.techTitle" [titleProject]="card.titleProject" [listTech]="card.listStack" [link]="card.link" [imagem]="card.imagem"></card-project>
         </section>
         
     </div>
