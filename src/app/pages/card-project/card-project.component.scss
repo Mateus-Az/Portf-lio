@@ -9,6 +9,9 @@
             img {
                 transform: scale(103%);
             }
+            div{
+                display: none;
+            }
         }
     }
 
@@ -19,6 +22,8 @@
 
         position: relative;
         overflow: hidden;
+
+        transition: all .60s ease;
 
         div {
             display: flex;
@@ -34,6 +39,7 @@
 
             position: absolute;
 
+            transition: all .60s ease;
 
             p {
                 color: #FFF;

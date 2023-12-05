@@ -13,6 +13,7 @@ export class HomeComponent implements OnInit {
     {
       techTitle: 'Full-Stack',
       titleProject: 'Missão Andrômeda',
+      imagem:'/assets/and.png',
       listStack: [
         { stack: 'java' },
         { stack: 'spring' },
@@ -23,6 +24,7 @@ export class HomeComponent implements OnInit {
     {
       techTitle: 'Front-end',
       titleProject: 'Halloween',
+      imagem:'/assets/Group6.png',
       listStack: [
         { stack: 'angular' },
         { stack: 'typescript' },
