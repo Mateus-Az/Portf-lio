@@ -9,4 +9,6 @@ export class CardProjectComponent {
   @Input() techTitle: any;
   @Input() titleProject: any;
   @Input() listTech: any;
+  @Input() imagem: any;
+  @Input() link: any;
 }

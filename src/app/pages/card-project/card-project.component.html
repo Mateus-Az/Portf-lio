@@ -3,7 +3,7 @@
         <p>{{techTitle}}</p>
     </div>
     
-    <img src="../../../assets/and.png" alt="">
+    <img [src]="imagem" alt="">
 
 </div>
 
@@ -14,7 +14,7 @@
         <div class="item" *ngFor="let tech of listTech">{{tech.stack}}</div>
     </div>
 
-    <a href="">
+    <a [href]="link" target="_blank">
         <p>See the case project</p> <img src="/assets/arrow-right.svg" alt="">
     </a>
 
