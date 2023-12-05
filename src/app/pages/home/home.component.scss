@@ -150,51 +150,6 @@
                 }
             }
 
-            @media(max-width: 600px) {
-                .row1 {
-                    align-items: flex-end;
-                }
-
-                .row2 {
-                    flex-direction: column;
-                    width: auto;
-                }
-
-
-                .row1 span,
-                .row2 .mid {
-                    font-size: 80px;
-                    margin: 0px;
-                    padding: 0px;
-                    line-height: normal;
-                }
-
-                .row2 .hello {
-                    width: 70%;
-
-                    box-sizing: border-box;
-                    font-size: 12px;
-                    margin: 0px;
-                    padding: 0px 10px;
-                    line-height: normal;
-                    height: auto;
-                    padding-bottom: 15px;
-                }
-
-                .row3 span {
-                    font-size: 55px;
-                    line-height: normal;
-                    margin: 0px;
-                }
-
-
-                .row3 img {
-                    height: 40px;
-                    width: 40px;
-                    margin: 0px;
-                    margin-top: -10px;
-                }
-            }
         }
 
         .more {
@@ -226,11 +181,6 @@
 
             }
 
-            &:hover {
-                img {
-                   
-                }
-            }
         }
     }
 
@@ -249,11 +199,6 @@
         position: sticky;
         top: 0;
 
-        @media(max-width:600px) {
-            height: auto;
-        }
-
-
         .profile {
 
             display: flex;
@@ -267,11 +212,6 @@
             box-sizing: border-box;
 
 
-            @media(max-width:600px) {
-                width: 100%;
-                height: auto;
-            }
-
 
             .col-1 {
                 box-sizing: border-box;
@@ -284,12 +224,7 @@
                 padding: 0px 24px;
 
 
-                @media(max-width:600px) {
-                    flex-direction: column;
-                    height: auto;
-                    padding: 10px;
-                    padding-bottom: 5px;
-                }
+
 
                 .about-me {
                     flex: 50%;
@@ -490,9 +425,7 @@
                             flex-direction: column;
                             justify-content: center;
 
-                            @media(max-width:600px) {
-                                margin-right: 5px;
-                            }
+
 
                             .top {
                                 flex: 70%;
@@ -531,11 +464,7 @@
                                     letter-spacing: 3px;
                                 }
 
-                                @media (max-width: 600px) {
-                                    .span-bottom {
-                                        font-size: 14px;
-                                    }
-                                }
+
                             }
                         }
 
@@ -552,9 +481,6 @@
 
                             box-sizing: border-box;
 
-                            @media(max-width:600px) {
-                                margin-left: 5px;
-                            }
 
 
                             .top {
@@ -583,7 +509,7 @@
                                 flex: 30%;
                                 margin: 12px 24px 24px 24px;
 
-                                @media (max-width: 600px) {}
+
 
 
 
@@ -609,42 +535,9 @@
                                     letter-spacing: 3px;
                                 }
 
-                                @media (max-width: 600px) {
-                                    .span-bottom {
-                                        font-size: 14px;
-                                    }
-                                }
+
                             }
                         }
-                    }
-                }
-
-
-                @media(max-width: 600px) {
-                    .col-1 {
-                        flex-direction: column;
-                        height: 100%;
-                    }
-
-                    .about-me,
-                    .about-me-2 {
-                        margin: 6px;
-
-                    }
-
-                    .about-me-2 .about-me-2-2 {
-                        margin: 0px;
-                    }
-
-
-
-                    .about-me .img img {
-                        width: 80%;
-                        height: 80%;
-                        min-width: auto;
-                        min-height: auto;
-                        max-width: none;
-                        max-height: none;
                     }
                 }
             }
@@ -812,13 +705,6 @@
                                     &:hover {
                                         transform: translateY(-3px);
                                     }
-
-                                    @media(max-width: 600px) {
-                                        // width: 40px;
-                                        // height: 40px;
-                                        // max-width: 40px;
-                                        // max-height: 40px;
-                                    }
                                 }
                             }
                         }
@@ -965,89 +851,6 @@
                         }
                     }
                 }
-
-                @media(max-width: 600px) {
-                    flex-direction: row;
-                    flex-wrap: wrap;
-                    justify-content: space-between;
-
-                    height: auto;
-                    padding: 10px;
-                    padding-top: 0px;
-                    padding-bottom: 0px;
-
-                    .col-2-2 {
-                        order: -1;
-                        margin: 0;
-                        flex: none;
-                        width: 100%;
-                        margin-bottom: 10px;
-                    }
-
-                    .col-2-1,
-                    .col-2-3 {
-                        margin: 0px;
-                        flex: none;
-                        width: 49%;
-
-                        .text {
-                            .span-1 {
-                                font-size: 10px;
-                            }
-
-                            .span-2 {
-                                font-size: 14px;
-                            }
-
-                        }
-
-                    }
-
-                    .col-2-1 .text,
-                    .col-2-3 .text {
-                        width: auto;
-                    }
-
-                    .col-2-1 .links {
-                        margin: 0;
-                        width: 100%;
-                        height: 100%;
-
-                        a {
-                            width: 70px;
-                            height: 70px;
-
-                            img {
-                                width: 28px;
-                            }
-                        }
-                    }
-
-                    .col-2-3 .social {
-                        margin: 0;
-                        width: 100%;
-                        height: 100%;
-
-                        a {
-                            width: 70px;
-                            height: 70px;
-
-                            img {
-                                width: 28px;
-                            }
-                        }
-                    }
-
-                    .col-2-2 .list-stacks ul {
-                        margin: 10px 5px;
-
-                        li img {
-                            width: 35px;
-                            height: 35px;
-                        }
-                    }
-                }
-
             }
 
             .col-3 {
@@ -1060,15 +863,6 @@
                 height: 229px;
 
                 padding: 0px 24px;
-
-
-                @media(max-width:600px) {
-                    height: auto;
-                    flex-wrap: wrap;
-                    padding: 10px;
-                    padding-top: 0px;
-
-                }
 
                 .col-3-1 {
                     flex: 50%;
@@ -1147,28 +941,6 @@
                         margin-left: 12px;
                         margin-right: 24px;
                     }
-
-                    @media(max-width:600px) {
-
-                        .top,
-                        .midle,
-                        .bottom {
-                            flex-direction: column;
-
-                            .num {
-                                height: 100%;
-                                display: flex;
-                                justify-content: flex-start;
-                                font-size: 28px;
-                            }
-
-                            .text {
-                                font-size: 12px;
-                                width: 60%;
-                            }
-                        }
-                    }
-
                 }
 
                 .col-3-2 {
@@ -1210,25 +982,6 @@
                         margin-left: 55px;
                     }
 
-                }
-
-                @media(max-width:600px) {
-
-
-                    .col-3-1,
-                    .col-3-2 {
-                        margin: 0px;
-                        margin-top: 10px;
-                        padding: 25px;
-
-                        h1 {
-                            margin-left: 30px;
-                        }
-
-                        .bottom-2 {
-                            margin-left: 30px;
-                        }
-                    }
                 }
             }
         }
@@ -1286,10 +1039,154 @@
             margin: auto;
             justify-content: space-around;
 
-            card-project{
+            card-project {
                 width: 48%;
                 height: 48%;
 
+            }
+        }
+    }
+
+    @media(max-width:1400px) {
+        .main {
+            .center {
+                .row1 {
+                    span {
+                        font-size: 110px;
+                    }
+                }
+
+                .row2 {
+                    .mid {
+                        font-size: 110px;
+                    }
+
+                    .hello {
+                        font-size: 16px;
+                    }
+                }
+
+                .row3 {
+                    span {
+                        font-size: 110px;
+                    }
+                }
+            }
+        }
+
+        .view-1 {
+            .profile {
+                height: 700px;
+
+                .col-1 {
+                    padding: 0px 24px 12px 24px;
+
+                    .about-me{
+                        .img{
+                            img{
+                                min-width: 230px;
+                                max-width: 230px;
+                                min-height: 250px;
+                                max-height: 250px;
+                            }
+                        }
+                    }
+
+                    .about-me-2{
+                        .about-me-2-1{
+                            padding: 12px;
+                        }
+                        .about-me-2-2{
+                            margin-top: 6px;
+                        }
+                    }
+                }
+
+                .col-2 {
+                    padding: 12px 24px 12px 24px;
+
+                    .col-2-2{
+                        .list-stacks{
+                            ul{
+                                margin: 24px;
+                                li img{
+                                    width: 48px;
+                                    height: 48px;
+                                }
+                            }
+                        }
+                    }
+                }
+
+                .col-3 {
+                    padding: 12px 24px 12px 24px;
+
+                    .col-3-1{
+                        .top{
+                            .num{
+                                font-size: 28px;
+                            }
+                        }
+
+                        .bottom{
+                            .num{
+                                font-size: 28px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
+        .view-2 {
+            .list-projects {
+                width: 80%;
+            }
+        }
+    }
+
+    @media(max-width:1080px){
+        .view-1{
+            .profile{
+                .col-1{
+                    .about-me{
+                        .img{
+                            img{
+                                min-width: 195px;
+                                max-width: 195px;
+                            }
+                        }
+                    }
+                }
+
+                .col-2{
+                    .col-2-2{
+                        .list-stacks{
+                            ul{
+                                margin: 24px 24px 20px 24px;
+                                li{
+                                    padding: 5px;
+                                    img{
+                                        width: 40px;
+                                        height: 40px;
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        .view-2{
+            height: 125vh;
+            .project-header{
+                span{
+                    font-size: 50px;
+                }
+
+                .list-projects{
+                    width: 85%;
+                }
             }
         }
     }
