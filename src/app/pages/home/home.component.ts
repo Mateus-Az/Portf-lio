@@ -140,12 +140,14 @@ export class HomeComponent implements OnInit {
     const element1 = document.getElementById('r2');
     const element2 = document.getElementById('r3');
     const element3 = document.getElementById('view2-r1')!;
+    const element4 = document.getElementById('hello')!;
 
     if (element && element1 && element2) {
       element.style.marginRight = `${margin}px`;
       element1.style.marginLeft = `${margin1}px`;
       element2.style.marginRight = `${margin2}px`;
       element3.style.marginRight = `${margin3}px`;
+      element4.style.marginLeft = `${margin1}px`;
     }
   }
 }
