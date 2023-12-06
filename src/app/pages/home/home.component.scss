@@ -197,7 +197,7 @@
         align-items: center;
 
         position: sticky;
-        top: 0;
+        top: auto;
 
         .profile {
 
@@ -1452,11 +1452,14 @@
     @media(max-width:550px) {
         .main {
             justify-content: space-between;
-            navbar{
+
+            navbar {
                 height: unset;
             }
+
             .center {
                 height: unset;
+
                 .row2 {
                     flex-direction: column;
                 }
@@ -1465,7 +1468,8 @@
                     flex-direction: column-reverse;
                 }
             }
-            .more{
+
+            .more {
                 height: unset;
             }
 
@@ -1475,20 +1479,21 @@
             .profile {
 
                 .col-1 {
-                    .about-me{
+                    .about-me {
                         margin: 0px;
                     }
 
                     .about-me-2 {
                         width: 100%;
+
                         .about-me-2-2 {
                             flex-direction: column;
 
-                            .about-me-section-left{
+                            .about-me-section-left {
                                 margin: 0px 0px 6px 0px;
                             }
 
-                            .about-me-section-right{
+                            .about-me-section-right {
                                 margin: 6px 0px 0px 0px;
                             }
                         }
@@ -1500,6 +1505,120 @@
         .view-2 {
             .list-projects {
                 width: 95%;
+            }
+        }
+    }
+
+    @media(max-width: 535px) {
+        .main {
+            .center {
+
+                .row1 {
+                    span {
+                        font-size: 50px;
+                        line-height: normal;
+                        margin: 0;
+                    }
+                }
+
+                .row2 {
+                    .mid {
+                        font-size: 50px;
+                        line-height: normal;
+                        margin: 0;
+                    }
+
+
+                    .hello {
+                        font-size: 10px;
+                        overflow: hidden;
+                        line-height: 25px;
+                        display: flex;
+                        width: 350px;
+                    }
+                }
+
+                .row3 {
+                    span {
+                        font-size: 50px;
+                        line-height: normal;
+                        margin: 0;
+                    }
+
+                    img {
+                        width: 80px;
+                        height: 80px;
+                    }
+
+                }
+            }
+        }
+
+        .view-1 {
+            .profile {
+                .col-1 {
+                    .about-me {
+                        .img {
+                            img {
+                                min-width: 120px;
+                                max-width: 120px;
+
+                                min-height: 100%;
+                                max-height: 100%;
+                            }
+                        }
+
+                        .text {
+                            .name-title {
+                                font-size: 12px;
+                            }
+
+                            .name {
+                                font-size: 26px;
+                            }
+
+                            .name-description {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width:360px) {
+        .view-1 {
+
+
+            .profile {
+                .col-1 {
+                    .about-me {
+                        .img {
+                            img {
+                                min-width: 105px;
+                                max-width: 105px;
+
+                                min-height: 98%;
+                                max-height: 98%;
+                            }
+                        }
+
+                        .text {
+                            .name-title {
+                                font-size: 12px;
+                            }
+
+                            .name {
+                                font-size: 22px;
+                            }
+
+                            .name-description {
+                                font-size: 10px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }

@@ -121,23 +121,48 @@
     }
   }
 
-  @media(max-width:700px){
-    header{
+  @media(max-width:700px) {
+    header {
       width: 50%;
       justify-content: space-around;
 
-      .links{
+      .links {
         display: none;
       }
 
-      .logo{
+      .logo {
         width: 30%;
         padding: 0;
       }
 
-      .disp{
+      .disp {
         width: 70%;
         align-items: center;
+      }
+    }
+  }
+
+  @media(max-width:535px) {
+    header {
+      width: 100%;
+
+      .logo{
+        img{
+          width: 60px;
+        }
+      }
+
+      .disp {
+        span {
+          font-size: 13px;
+        }
+
+        .disp-time {
+          span {
+            font-size: 10px;
+          }
+
+        }
       }
     }
   }
