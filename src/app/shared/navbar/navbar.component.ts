@@ -7,4 +7,12 @@ import { Component } from '@angular/core';
 })
 export class NavbarComponent {
 
+  public showMenu() {
+    let menu = document.querySelector('#menu-icon');
+    let navlist = document.querySelector('.links');
+
+    menu?.classList.toggle('bx-x');
+    navlist?.classList.toggle('open');
+
+  }
 }
