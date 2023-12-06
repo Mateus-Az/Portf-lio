@@ -9,7 +9,7 @@
         justify-content: center;
 
         height: 100vh;
-        overflow: hidden;
+        overflow-y: scroll;
 
         position: sticky;
         top: 0;
@@ -995,8 +995,9 @@
         box-sizing: border-box;
 
         position: sticky;
-        top: 0;
+        top: 100%;
         transition: top 0.5s ease-in-out;
+        z-index: 2;
 
         .project-header {
             display: flex;
@@ -1282,8 +1283,9 @@
         }
 
         .view-1 {
-            height: 340vh;
+            height: auto;
             align-items: normal;
+            top: auto;
 
             .profile {
                 height: 100%;
@@ -1385,7 +1387,7 @@
         }
 
         .view-2 {
-            height: 100vh;
+            height: 155vh;
 
             .list-projects {
                 width: 90%;
@@ -1400,12 +1402,16 @@
                 .row1 {
                     span {
                         font-size: 70px;
+                        line-height: normal;
+                        margin: 0;
                     }
                 }
 
                 .row2 {
                     .mid {
                         font-size: 70px;
+                        line-height: normal;
+                        margin: 0;
                     }
 
 
@@ -1413,12 +1419,16 @@
                         font-size: 12px;
                         overflow: hidden;
                         line-height: 25px;
+                        display: flex;
+                        width: 350px;
                     }
                 }
 
                 .row3 {
                     span {
                         font-size: 70px;
+                        line-height: normal;
+                        margin: 0;
                     }
                 }
             }
@@ -1427,7 +1437,7 @@
 
     @media(max-width:600px) {
         .view-2 {
-            height: 200vh;
+            height: 280vh;
 
             .list-projects {
                 card-project {
@@ -1441,7 +1451,12 @@
 
     @media(max-width:550px) {
         .main {
+            justify-content: space-between;
+            navbar{
+                height: unset;
+            }
             .center {
+                height: unset;
                 .row2 {
                     flex-direction: column;
                 }
@@ -1450,6 +1465,10 @@
                     flex-direction: column-reverse;
                 }
             }
+            .more{
+                height: unset;
+            }
+
         }
 
         .view-1 {
