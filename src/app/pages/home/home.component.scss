@@ -1251,6 +1251,7 @@
 
     @media(max-width:955px) {
         .main {
+            overflow-x: hidden;
             .center {
 
                 .row1 {
@@ -1402,6 +1403,7 @@
 
     @media(max-width:700px) {
         .main {
+            overflow: hidden;
             .center {
 
                 .row1 {
